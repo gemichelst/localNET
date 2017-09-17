@@ -13,6 +13,8 @@ require('includes/functions.inc.php');
 <link rel="stylesheet" href="css/w3-theme-black.css">
 <link rel="stylesheet" href="css/Roboto.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/jeet.css">
+<link rel="stylesheet" href="https://code.highcharts.com/css/highcharts.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
