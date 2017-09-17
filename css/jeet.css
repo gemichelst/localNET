@@ -1,0 +1,95 @@
+.wrapper {
+  *zoom: 1;
+  width: auto;
+  max-width: 1200px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.wrapper:before, .wrapper:after {
+  content: '';
+  display: table;
+}
+.wrapper:after {
+  clear: both;
+}
+.wrapper div {
+  box-sizing: border-box;
+  border: 1px solid #ededed;
+  margin-bottom: 10px;
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 30%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.wrapper div:before, .wrapper div:after {
+  content: '';
+  display: table;
+}
+.wrapper div:after {
+  clear: both;
+}
+.wrapper div:nth-of-type(4n) {
+  margin-right: 0%;
+  float: right;
+}
+.wrapper div:nth-of-type(4n + 1) {
+  clear: both;
+}
+@media screen and (max-width: 900px) {
+  .wrapper div {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  .wrapper div:before, .wrapper div:after {
+    content: '';
+    display: table;
+  }
+  .wrapper div:after {
+    clear: both;
+  }
+  .wrapper div:nth-of-type(3n) {
+    margin-right: 3%;
+    float: left;
+  }
+  .wrapper div:nth-of-type(3n + 1) {
+    clear: none;
+  }
+  .wrapper div:nth-of-type(2n) {
+    margin-right: 0%;
+    float: right;
+  }
+  .wrapper div:nth-of-type(2n + 1) {
+    clear: both;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper div {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .wrapper div:first-child {
+    margin-left: auto;
+  }
+  .wrapper div:last-child {
+    margin-right: auto;
+  }
+}
+.wrapper div p {
+  padding: 10px;
+}
